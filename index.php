@@ -25,14 +25,11 @@
     </head>
 
     <body>
-    <?php include('index.html');?>
-    <?php 
-    //Include la chaine de connexion
-    include('config.php'); ?>
+
     <div class="page-container">
             <h1>Login</h1>
             <h1>BRIDGE MARKET SERVER</h1>
-            <form name="loggin" action="config.php" method="POST">
+            <form action="bdconnect.php" method="POST">
                 <input type="text" name="usern" placeholder="Username">
                 <input type="password" name="pswd" placeholder="Password">
                 <button type="submit">Sign me in</button>

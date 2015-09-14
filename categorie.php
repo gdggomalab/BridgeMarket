@@ -5,7 +5,7 @@
 <title>Categorie</title>
 <meta name="keywords" content="city blog, theme, free templates, website templates, CSS, HTML" />
 <link href="tooplate_style.css" rel="stylesheet" type="text/css" />
-<?php include('index.html');?>
+<?php include('index.php');?>
 <?php 
 //Include la chaine de connexion
 include('config.php'); ?>
