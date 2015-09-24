@@ -21,7 +21,7 @@ if (isset($_POST) && !empty($_POST['usern']) && !empty($_POST['pswd']) ) {
         session_start();
         $_SESSION['usern']=$usern;
         //header("location:webapp1.home.php"); //Ouvre la page de bienvenue de l'application
-        header("location:choix.php"); //Ouvre la page de bienvenue de l'application
+        header("location:categorie.php"); //Ouvre la page de bienvenue de l'application
     }
 }
 else {

@@ -13,7 +13,7 @@ body {
 	background-color: #ffffff;
 	background-image: url(images/tooplate_main_wrapper.jpg);
 	background-repeat: repeat-x;
-	background-position: top
+	background-position: top;
 }
 
 a, a:link, a:visited { color: #ffffff; text-decoration: none; }
@@ -136,7 +136,7 @@ em { color: #cf560d }
 #tooplate_menu ul li a {
 	float: left;
 	display: block;
-	width: 220px;
+	width: 180px;
 	height: 30px;
 	padding: 10px 0 0 0;
 	font-size: 18px;

@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Produits/Products</title>
+<title>Produit</title>
 <meta name="keywords" content="city blog, theme, free templates, website templates, CSS, HTML" />
 <link href="tooplate_style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -13,10 +13,11 @@
         <div id="tooplate_menu">
             <ul >
                 <font color="">
-                <li><a href="produit.html" class="current">Produits</a></li>
-                <li><a href="categorie.html">Categorie</a></li>
-                <li><a href="promotion.html">Promotion</a></li>
-                <li><a href="contact.html">Etat de Sortie</a></li>
+                <li><a href="produits.php"class="current"> Produits</a></li>
+                <li><a href="categorie.php">Categorie</a></li>
+                <li><a href="promotion.php">Promotion</a></li>
+                <li><a href="affichage.php">Etat de Sortie</a></li>
+                <li><a href="adminacc.php">Administration</a></li>
                 </font>
             </ul>    	
         </div> 
@@ -36,66 +37,68 @@
 
 
 <div>
-    <form name="insertion" action="insertionp.php" method="POST">
+    <form name="produit" action="addprod.php" method="POST">
   <table border="0" align="center" cellspacing="2" cellpadding="2">
         <tr align="left">
       <td><font size="4">Categorie</font></td>
       <td>
-      <select name="categorieload">
-            <option value="">Selectionne Categ..</option>
+      <select name="id_categorie">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
       </select>
       </td>
     </tr>
     <tr align="Left">
       <td><font size="4">Designation</font></td>
-      <td><input type="text" name="adresse"></td>
+      <td><input type="text" name="designation_product"></td>
     </tr>
     <tr align="Left">
       <td><font size="4">Prix</font></td>
-      <td><input type="text" name="adresse" Placeholder="Prix en dollars"></td>
+      <td><input type="text" name="price_product" Placeholder="Prix en dollars"></td>
     </tr>
     <tr align="Left">
       <td><font size="4">Details</font></td>
-      <td><input type="text" name="codePostal"></td>
+      <td><input type="text" name="details_product"></td>
     </tr>
     <tr align="Left">
       <td><font size="4">Stock</font></td>
-      <td><input type="text" name="telephone"></td>
+      <td><input type="text" name="stock_product"></td>
     </tr>
      <tr align="Left">
       <td><font size="4">Date Modification Produit</font></td>
-      <td><input type="text" name="telephone"></td>
+      <td><input type="text" name="date_modif_product"></td>
     </tr>
      <tr align="Left">
-      <td><font size="4">Id Promotion</font></td>
+      <td><font size="4">Promotion</font></td>
       <td>
-      <select name="promoload">
-            <option value="">Selectionne Promo.</option>
+      <select name="id_promotion_product">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
       </select>
       </td>
     </tr>
      <tr align="Left">
       <td><font size="4">Lien</font></td>
-      <td><input type="text" name="telephone"></td>
+      <td><input type="text" name="url_product"></td>
     </tr>
      <tr align="Left">
       <td><font size="4">Image</font></td>
-        <td><input type="text" name="imageloc" placeholder="Charger la Photo">
-          <input type="file" name="load" value="Parcourir">
-        </td>
+        <td><input type="text" name="image_product" placeholder="Charger la Photo">
+          </td>
+          <tr align="right">
+            <td> <input type="submit" value="Insert" ></td>
+
+          </tr>
     </tr>
     </font>
  
 </form>
-<table border="0" align="center" cellspacing="3" cellpadding="3">
-    <tr align="Left">
-    <td><input type="submit" value="Insert">
-    </td>
-    <td><input type="submit" value="Modify"></td>    
-    <td><input type="submit" value="Delete"></td>
-    </tr>
-    </table>
-
 </div>
      <!-- end of header -->
 </div> <!-- end of header wrapper -->
